@@ -3,7 +3,8 @@ import pandas as pd
 import random
 from datetime import datetime
 
-elements_data = {
+# 元素資料
+data = {
     'Symbol': ['H', 'He', 'Li', 'Be', 'B', 'C', 'N', 'O', 'F', 'Ne',
                'Na', 'Mg', 'Al', 'Si', 'P', 'S', 'Cl', 'Ar', 'K', 'Ca',
                'Br', 'I'],
@@ -11,8 +12,9 @@ elements_data = {
                     '鈉', '鎂', '鋁', '矽', '磷', '硫', '氯', '氬', '鉀', '鈣',
                     '溴', '碘']
 }
-df = pd.DataFrame(elements_data)
+df = pd.DataFrame(data)
 
+# 答題記錄
 if "log" not in st.session_state:
     st.session_state.log = []
 
